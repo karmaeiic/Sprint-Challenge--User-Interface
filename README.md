@@ -33,13 +33,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    Semantic markup for HTML is the organization of HTML elements in your document to convey hierarchical meaning. This is in order to keep clear the division between the markup and the visual presentation of the HTML. 
+
 2. What are the 4 areas of the box model?
+
+    There are 4 areas of the CSS box model, content, padding, border and margin. Content of the box is where the text, and images appear. Padding adds transparent space around the content. Border adds a border around the padding and content. Margin adds a transparent space around the border.
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    While using flexbox the property align-items: center, items are positioned at the center of the container. Items are aligned with the cross axis of the container. 
+
 4. Explain why git is valuable to a team of developers.
 
+    Git and github allows a team of developers to work collaboratively on a code repository making incremental changes to a project with all of the previous versions still being accessible through push/pull commits. This is valuable because regular saves overwrite information from previous versions meaning that if a bug is introduced to your code there is no way to roll back to a previous version.
+
 5. Define mobile-first design in your own words.
+
+    Mobile-first design is the practice of designing websites first for mobile browsers because the majority of internet users will see your site through mobile devices such as smartphones and tablets. This forces the developers to focus on having interactive sites that are accessible to a wide variety of browser sizes.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
