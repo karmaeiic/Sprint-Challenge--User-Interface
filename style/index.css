@@ -140,13 +140,9 @@ table {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
+html,
 body {
     height: 100%;
-    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -155,42 +151,9 @@ h2,
 h3,
 h4,
 h5 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 18px;
+    margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 2.3em 0;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 2.3em 0;
-}
-
-nav {
-    width: 100%;
-    margin: 1.5em 0 0 5%;
-    overflow: auto;
-}
-
-.header-img {
-    display: flex;
-    align-content: center;
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 3rem;
-}
-
-.logo {
-    width: 20%;
 }
 
 ul.nav {
@@ -198,12 +161,13 @@ ul.nav {
     justify-content: space-evenly;
     flex-direction: row;
     margin: 3rem;
+    align-items: flex-end;
 }
 
 li a {
     color: rgb(20, 20, 20);
     padding: .7em 1em;
-    font-size: 1.7rem;
+    font-size: 17px;
     text-decoration: none;
 }
 
@@ -211,38 +175,39 @@ li a:hover {
     color: #7eb9be;
 }
 
-div.header {
-    display: flex;
-    align-items: center;
-}
-
 p {
     line-height: 1.4;
 }
 
 .container {
-    width: 100%;
+    width: 800px;
     margin: 0 auto;
+}
+
+.banner {
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: center;
+    padding: 4.5%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
-    border-bottom: .1rem dashed black;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 2rem;
+    padding-bottom: 20px;
 }
 
 .middle-content {
-    width: 100%;
-    margin-bottom: 2rem;
-    border-bottom: .1rem dashed black;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
@@ -258,9 +223,9 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 10rem;
+    height: 100px;
     background: black;
-    margin: 2rem 2.5%;
+    margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -309,7 +274,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 2rem;
+    margin: 0 2% 20px;
     justify-content: space-around;
 }
 
@@ -331,8 +296,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2%;
-    font-size: 1.4rem;
+    padding: 20px 2%;
+    font-size: 14px;
 }
 
 footer nav a {
@@ -340,63 +305,21 @@ footer nav a {
     text-decoration: none;
 }
 
-
-}
-
-}
-@media (max-width:800px) {
-    ul.nav {
-        flex-direction: column;
-        text-align: center;
-    }
-    li {
-        margin: 1.5rem;
-    }
-    li a {
-        font-size: 1.7rem;
-    }
-    img.logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .topcontent {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 20px;
-        border-bottom: 1px dashed black;
-    }
-    .middle-content {
-        margin-bottom: 20px;
-        border-bottom: 1px dashed black;
-    }
-    .middle-content h2 {
-        padding: 0 2%;
-        margin-bottom: 0;
-    }
-    .middle-content .boxes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .footernav {
-        display: none;
-    }
-}
 @media (max-width:500px) {
     ul.nav {
         flex-direction: column;
-        text-align: center;
     }
     li {
-        margin: 1rem;
+        margin: 10px;
     }
     li a {
-        font-size: 1.6rem;
+        font-size: 16px;
+        text-align: center;
     }
     img.logo {
-        display: block;
+        display: flex;
+        justify-content: center;
+        left-padding: 70px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -404,23 +327,36 @@ footer nav a {
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        text-align: left;
+    }
+    .banner {
+        width: 90%;
     }
     .boxes {
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding-left: 135px;
     }
     .middle-content {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-align: left;
         flex-wrap: nowrap;
         flex-direction: column;
-        vertical-align: center;
     }
-    .bottom-content {
-        display: none;
-    }
-    .footernav {
-        display: none;
-    }
+}
+
+.bottom-content {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+© 2020 GitHub,
+Inc. Terms Privacy Security Status Help Contact GitHub Pricing API Training Blog About
+}
+
 }
